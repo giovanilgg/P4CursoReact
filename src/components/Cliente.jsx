@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+//
 const Cliente = ({ cliente }) => {
   const { nombre, empresa, email, telefono, notas, id } = cliente;
   const navigate = useNavigate()
