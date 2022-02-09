@@ -1,0 +1,20 @@
+{
+  "clientes": [
+    {
+      "nombre": "fhjkl",
+      "empresa": "sedfrg",
+      "email": "giovanizzxx@gmail.com",
+      "telefono": "23456789",
+      "notas": "dfdf",
+      "id": 1
+    },
+    {
+      "nombre": "giovani",
+      "empresa": "giovascom",
+      "email": "giovanilopez82@aragon.unam.mx",
+      "telefono": "23456789",
+      "notas": "sdfgh",
+      "id": 2
+    }
+  ]
+}
