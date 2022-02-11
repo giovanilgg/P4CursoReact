@@ -1,3 +1,12 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "nombre": "xzddf",
+      "empresa": "sdfgh",
+      "email": "giovanilopez82@aragon.unam.mx",
+      "telefono": "234345",
+      "notas": "zxcvb",
+      "id": 1
+    }
+  ]
 }
