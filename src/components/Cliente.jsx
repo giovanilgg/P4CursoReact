@@ -1,11 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 //
-const Cliente = ({ cliente }) => {
+const Cliente = ({ cliente, handleEliminar }) => {
   const { nombre, empresa, email, telefono, notas, id } = cliente;
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
-      
     <>
       <tr className="border-b-4 hover:bg-gray-100">
         <td className="p-2">{nombre}</td>
@@ -24,10 +23,8 @@ const Cliente = ({ cliente }) => {
           <button
             className="p-2 mr-6 w-full uppercase bg-orange-600 rounded-xl text-white hover:bg-orange-500 "
             type="button"
-            onClick={()=>{
-            navigate(`/clientes/${id}`)
-
-
+            onClick={() => {
+              navigate(`/clientes/${id}`);
             }}
           >
             Ver
@@ -35,12 +32,16 @@ const Cliente = ({ cliente }) => {
           <button
             className="p-2 mr-6 mt-1 w-full uppercase bg-indigo-500 rounded-xl text-white hover:bg-indigo-300"
             type="button"
+            onClick={() => {
+              navigate(`/clientes/editar/${id}`);
+            }}
           >
             Editar
           </button>
           <button
             className="p-2 mt-1 w-full uppercase bg-red-600 rounded-xl text-white hover:bg-red-400"
             type="button"
+            onClick={()=>handleEliminar(id)}
           >
             Eliminar
           </button>
